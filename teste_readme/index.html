@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style4.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ec6885e69b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/inicio.png" type="image/x-icon">
+    <title>Documentação</title>
+    <style>
+        .conteudo-oculto {
+            display: none;
+            margin-top: 20px;
+        }
+        .botao-ler-mais {
+            padding: 10px 30px;
+            background-color: rgb(149, 170, 197);
+            color: rgb(53, 49, 49);
+            border: none;
+            outline: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .blog-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+  <section class="blog-section">
+    <div class="blog-container">
+        <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quas delectus corrupti?</h2>
+    
+        <p class="parag-borda">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        
+        <div class="blog-topic">
+            <h3>HTML</h3>
+            <p class="normal">HTML (Hypertext Markup Language) é a base de toda página web. Ele permite estruturar o conteúdo com elementos como títulos, parágrafos, listas, links e muito mais.</p>
+            <br>
+            <img src="img/imigrantes6.jpg" alt="HTML Icon" class="html-icon">
+            <br><br>
+        </div>
+        
+        <div class="blog-topic">
+            <h3>CSS</h3>
+            <p class="normal">CSS (Cascading Style Sheets) é utilizado para estilizar páginas web. Ele controla o layout, as cores, as fontes e outros aspectos visuais dos elementos HTML.</p>
+        </div>
+        
+        <div class="blog-topic">
+            <h3>JavaScript</h3>
+            <p class="normal">JavaScript é uma linguagem de programação que adiciona interatividade às páginas web. Com ele, é possível criar animações, validar formulários e desenvolver aplicativos web dinâmicos.</p>
+        </div>
+        
+        <button class="botao-ler-mais">Ler Mais</button>
+  
+        <div class="conteudo-oculto" style="display: none;">
+            <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis nam, delectus dignissimos dolorum eius illum, repellendus enim, repudiandae repellat cum alias! Facere, laudantium! Enim voluptas ex minima soluta obcaecati, culpa cumque! Distinctio rem cupiditate excepturi cumque id, tenetur at dolore expedita, dolores nulla quas eos asperiores ducimus aut, facere atque molestias praesentium autem officiis qui. Unde expedita incidunt nihil repellat fugiat? Eveniet dolore nobis veniam iusto autem quis reiciendis voluptate maiores, vel ad. Non odio repudiandae adipisci tenetur animi.</p>
+            <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis nam, delectus dignissimos dolorum eius illum, repellendus enim, repudiandae repellat cum alias! Facere, laudantium! Enim voluptas ex minima soluta obcaecati, culpa cumque! Distinctio rem cupiditate excepturi cumque id, tenetur at dolore expedita, dolores nulla quas eos asperiores ducimus aut, facere atque molestias praesentium autem officiis qui. Unde expedita incidunt nihil repellat fugiat? Eveniet dolore nobis veniam iusto autem quis reiciendis voluptate maiores, vel ad. Non odio repudiandae adipisci tenetur animi.</p>
+            <p class="normal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque blanditiis nam, delectus dignissimos dolorum eius illum, repellendus enim, repudiandae repellat cum alias! Facere, laudantium! Enim voluptas ex minima soluta obcaecati, culpa cumque! Distinctio rem cupiditate excepturi cumque id, tenetur at dolore expedita, dolores nulla quas eos asperiores ducimus aut, facere atque molestias praesentium autem officiis qui. Unde expedita incidunt nihil repellat fugiat? Eveniet dolore nobis veniam iusto autem quis reiciendis voluptate maiores, vel ad. Non odio repudiandae adipisci tenetur animi.</p>
+        </div>
+    </div>
+  </section>
+  
+      
+    </div>
+</section>
+
+<script>
+    const botaoLerMais = document.querySelector(".botao-ler-mais");
+    const conteudoOculto = document.querySelector(".conteudo-oculto");
+
+    botaoLerMais.addEventListener("click", () => {
+        if (conteudoOculto.style.display === "none" || conteudoOculto.style.display === "") {
+            conteudoOculto.style.display = "block";
+            botaoLerMais.innerText = "Ler Menos";
+        } else {
+            conteudoOculto.style.display = "none";
+            botaoLerMais.innerText = "Ler Mais";
+        }
+    });
+</script>
+
+</body>
+</html>

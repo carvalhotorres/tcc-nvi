@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+      rel="stylesheet" />
+    <title>Frontend Mentor | [Testimonials grid section]</title>
+    <style>
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+p,
+h2 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.bg-violet,
+.bg-grayish-blue,
+.bg-blackish-blue {
+  color: hsl(210, 46%, 95%);
+}
+
+.bg-violet {
+  background-color: hsl(0, 91%, 40%);
+}
+
+.bg-grayish-blue {
+  background-color: hsl(0, 91%, 40%);
+}
+
+.bg-blackish-blue {
+  background-color: hsl(0, 91%, 40%);
+}
+
+.bg-white {
+  color: hsl(217, 19%, 35%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: hsl(210, 46%, 95%);
+  min-height: 56.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article:first-child {
+  position: relative;
+}
+article:first-child h2 {
+  z-index: 1;
+}
+article:first-child .quotation {
+  position: absolute;
+  top: 0;
+  right: 15%;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 1650px;
+  height: auto;
+}
+main article {
+  padding: 1.7rem 2rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+}
+main article figure {
+  display: flex;
+  align-items: center;
+  gap: 1.0625rem;
+}
+main article figure img {
+  height: 3.90rem;
+  max-width: 60px;
+  border-radius: 50%;
+  align-self: flex-start;
+}
+main article figure figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 0.105rem;
+  line-height: 1em;
+}
+main article figure figcaption p:last-child {
+  line-height: 1.5em;
+  font-size: 0.6875rem;
+  opacity: 50%;
+}
+main article h2 {
+  font-size: 1.25rem;
+  line-height: 1.2;
+  padding: 0.835rem 0 1.28rem;
+  font-weight: 600;
+}
+main article blockquote {
+  line-height: 1.385;
+  font-size: 0.8995rem;
+  opacity: 70%;
+}
+
+@media (min-width: 64rem) {
+  main {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem 1.875rem;
+  }
+  main .bg-violet,
+  main .bg-blackish-blue {
+    grid-column: span 2;
+  }
+  main article.last {
+    grid-area: 1/4/span 2;
+  }
+}/*# sourceMappingURL=style.css.map */
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="bg-violet">
+        <figure>
+          <img src="img/image-removebg-preview (2).png"/>
+          <figcaption>
+            <p>Daniel Clifford</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </h2>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum saepe mollitia nihil illo aliquam nisi maxime praesentium exercitationem est quae inventore fugiat ex quisquam libero culpa fugit veritatis, itaque quas nam distinctio, dolorum ullam laborum! Asperiores nulla at quae incidunt magni. Incidunt vitae excepturi aut magnam a modi natus aliquam vero assumenda sit optio sequi ullam, nihil minus placeat mollitia delectus officia voluptate obcaecati molestiae voluptatibus rerum sapiente accusantium. Veritatis consequuntur tenetur rerum ab debitis sed ipsum minima quod expedita incidunt, a illum itaque odit tempore ex, saepe repudiandae. Qui, saepe nam iste dolor similique ratione recusandae cum corporis aliquam quas ab quae aperiam molestias dolorem unde perferendis. Veritatis aperiam, doloribus beatae eveniet rerum vero cumque velit illo? Nam ratione vero fugit aut esse nemo aliquam libero nulla repudiandae dolorum reiciendis iste, quaerat atque repellat vel neque iure quisquam quo, tempore magni molestias totam necessitatibus. Dolor eveniet velit obcaecati quae cumque, aliquid error dolores dolorem quisquam itaque rerum? Ipsum eligendi at nostrum dolorem perspiciatis perferendis quae eos fuga, molestiae doloribus sint architecto repudiandae reiciendis magnam reprehenderit velit ullam dignissimos? Asperiores, ullam culpa ipsa rerum architecto quas molestiae quaerat beatae!
+        </blockquote>
+      </article>
+
+      <article class="bg-grayish-blue">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jonathan Walters</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>The team was very supportive and kept me motivated</h2>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo odit enim dolore, asperiores similique illo sunt officia officiis in debitis suscipit quam fugit qui, tempore at ipsum assumenda rem iusto. Porro minus iure unde illum quidem repellendus, libero praesentium doloribus quas iste? Asperiores, sit error. Eum dignissimos ipsam possimus voluptas. Deserunt aspernatur molestiae facilis atque est omnis sunt suscipit quo, nam voluptate magnam commodi officia fugiat rerum facere, reprehenderit ducimus voluptates sit. Totam provident veritatis, autem quis pariatur repellendus eum amet itaque? Dolores assumenda explicabo necessitatibus similique nihil mollitia sed dolore quibusdam a? Laboriosam rerum voluptatibus, odio modi quo libero porro quaerat qui magni nihil sint similique ad quam neque repellendus nisi corrupti et! Natus sequi nam accusantium doloremque!
+        </blockquote>
+      </article>
+
+      <article class="bg-white">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jeanette Harmon</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>An overall wonderful and rewarding experience</h2>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur aliquid laboriosam reiciendis repudiandae voluptatum consequuntur! Iste repellendus placeat itaque, expedita natus quaerat molestiae maxime harum deserunt id eveniet voluptatum porro doloremque nulla veritatis alias, possimus a magnam ducimus! Magni repellat, rem animi, cum veritatis temporibus exercitationem, quo non error eius sed minima ullam rerum ratione blanditiis. A fugiat, nihil in, veniam odio iure necessitatibus aliquam quibusdam maxime adipisci omnis tempora ducimus rerum quam, ipsum sapiente fuga neque eius consequuntur impedit facere animi blanditiis. Impedit officiis dolore beatae repudiandae nisi iure, atque quasi, unde distinctio fugiat voluptatibus, quibusdam sapiente nihil animi? Aperiam, debitis quos consectetur similique perspiciatis vitae doloribus? Architecto vel, nulla unde accusamus tempore voluptatem ipsum officiis. Vel, perspiciatis?
+        </blockquote>
+      </article>
+
+      <article class="bg-blackish-blue">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Ânonimo</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </h2>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officiis distinctio delectus minima quod dolores magnam et vitae modi, saepe eveniet voluptate, facilis a quis molestiae eaque est quas esse placeat. Nostrum pariatur ipsa ratione sed voluptas, iusto omnis, quae veritatis voluptatibus vel ducimus iste voluptatem dignissimos ullam, optio tempore harum nihil consectetur officia placeat commodi maxime sunt facilis quisquam. Tempora corrupti praesentium voluptate laborum perspiciatis illo maxime eius reiciendis libero esse atque, accusamus blanditiis debitis, ducimus corporis incidunt asperiores consequuntur ipsam. Exercitationem culpa mollitia, enim, tenetur voluptate libero sit, nobis excepturi quo natus quibusdam reiciendis aspernatur placeat. Iusto excepturi laborum eum? Nisi quaerat incidunt, laudantium nam vero voluptate nemo asperiores beatae eaque error? Doloribus adipisci dolorum a omnis et incidunt perferendis placeat itaque debitis dolorem quisquam maiores, possimus error explicabo fuga odio! Accusamus necessitatibus odit consectetur voluptas veniam, consequuntur aliquid, perferendis ex quia reiciendis dolore harum explicabo nesciunt sunt deserunt molestias. Minima, doloremque tenetur? Ex cum illo doloremque qui impedit neque tempore veniam necessitatibus earum assumenda! Voluptatem ex corrupti provident doloremque neque, ratione quaerat? Possimus eaque tempora inventore hic dolores ex? Mollitia itaque neque quis voluptatibus, omnis a praesentium quos distinctio adipisci perferendis minima iste velit ipsa assumenda. Nobis.
+        </blockquote>
+      </article>
+
+      <article class="bg-white last">
+        <figure>
+            <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Kira Whittle</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>Such a life-changing experience. Highly recommended!</h2>
+        <blockquote>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, minus voluptate perspiciatis dolorum reiciendis neque laboriosam soluta ut, tempore molestias voluptates rem! Iure perferendis quae ea repellendus omnis molestias suscipit doloribus, nostrum vero, impedit deserunt accusantium inventore quod odit rem nobis. Neque eligendi totam deserunt dicta ex optio quam modi quisquam praesentium quos eum, dolores obcaecati, enim ipsam deleniti suscipit temporibus architecto dolore quis rerum accusantium labore! Magni, sequi quo dignissimos laborum distinctio, quod cumque ut consequatur amet dolor accusamus eveniet ab placeat adipisci reprehenderit ducimus. Eaque labore ipsa nihil cupiditate. Necessitatibus dolor error distinctio enim natus cumque, consequuntur quibusdam amet fugiat vero ratione porro at animi ipsum saepe harum dolorum reiciendis modi velit pariatur accusantium beatae? Atque eveniet officiis et eius omnis nobis explicabo quis est hic inventore officia corrupti eos fuga recusandae sequi possimus quia ut iusto vel delectus, obcaecati accusantium mollitia! Velit error quaerat magnam. Minima sed rem provident reprehenderit adipisci aspernatur accusantium suscipit dicta temporibus magnam accusamus architecto facilis deleniti nam nesciunt repellat labore optio ullam libero, doloremque voluptatum! Aspernatur, modi optio? Unde ex tempora, quos debitis quo exercitationem nesciunt ea officiis dolor harum magnam eaque accusamus. Perferendis blanditiis ratione repellat, fugit repudiandae explicabo culpa perspiciatis atque cumque. Aperiam recusandae cupiditate quia mollitia qui nisi, voluptate sit quos rerum quaerat id quibusdam, animi similique magnam vitae, nam inventore! Cum perspiciatis et ducimus quaerat sequi neque quod deleniti quisquam quam aliquam esse, quo, odio nulla unde laboriosam, numquam est facilis. Sunt ducimus similique officiis aut, odio veritatis? Iste aspernatur nisi perspiciatis. Magnam perspiciatis obcaecati dicta reiciendis quidem blanditiis ipsum quisquam, facere a, quod minima quo quis velit ad voluptas natus aut molestiae sed. Ea neque numquam obcaecati repellat blanditiis saepe libero repudiandae tenetur? Vel, perferendis commodi exercitationem asperiores maiores eaque ab deleniti tenetur porro veritatis molestias?
+      </article>
+      <article class="bg-violet">
+        <figure>
+          <img src="img/image-removebg-preview (2).png"/>
+          <figcaption>
+            <p>Daniel Clifford</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>
+          I received a job offer mid-course, and the subjects I learned were
+          current, if not more so, in the company I joined. I honestly feel I
+          got every penny’s worth.
+        </h2>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. At illum saepe mollitia nihil illo aliquam nisi maxime praesentium exercitationem est quae inventore fugiat ex quisquam libero culpa fugit veritatis, itaque quas nam distinctio, dolorum ullam laborum! Asperiores nulla at quae incidunt magni. Incidunt vitae excepturi aut magnam a modi natus aliquam vero assumenda sit optio sequi ullam, nihil minus placeat mollitia delectus officia voluptate obcaecati molestiae voluptatibus rerum sapiente accusantium. Veritatis consequuntur tenetur rerum ab debitis sed ipsum minima quod expedita incidunt, a illum itaque odit tempore ex, saepe repudiandae. Qui, saepe nam iste dolor similique ratione recusandae cum corporis aliquam quas ab quae aperiam molestias dolorem unde perferendis. Veritatis aperiam, doloribus beatae eveniet rerum vero cumque velit illo? Nam ratione vero fugit aut esse nemo aliquam libero nulla repudiandae dolorum reiciendis iste, quaerat atque repellat vel neque iure quisquam quo, tempore magni molestias totam necessitatibus. Dolor eveniet velit obcaecati quae cumque, aliquid error dolores dolorem quisquam itaque rerum? Ipsum eligendi at nostrum dolorem perspiciatis perferendis quae eos fuga, molestiae doloribus sint architecto repudiandae reiciendis magnam reprehenderit velit ullam dignissimos? Asperiores, ullam culpa ipsa rerum architecto quas molestiae quaerat beatae!
+        </blockquote>
+      </article>
+
+      <article class="bg-grayish-blue">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jonathan Walters</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>The team was very supportive and kept me motivated</h2>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo odit enim dolore, asperiores similique illo sunt officia officiis in debitis suscipit quam fugit qui, tempore at ipsum assumenda rem iusto. Porro minus iure unde illum quidem repellendus, libero praesentium doloribus quas iste? Asperiores, sit error. Eum dignissimos ipsam possimus voluptas. Deserunt aspernatur molestiae facilis atque est omnis sunt suscipit quo, nam voluptate magnam commodi officia fugiat rerum facere, reprehenderit ducimus voluptates sit. Totam provident veritatis, autem quis pariatur repellendus eum amet itaque? Dolores assumenda explicabo necessitatibus similique nihil mollitia sed dolore quibusdam a? Laboriosam rerum voluptatibus, odio modi quo libero porro quaerat qui magni nihil sint similique ad quam neque repellendus nisi corrupti et! Natus sequi nam accusantium doloremque!
+        </blockquote>
+      </article>
+
+      <article class="bg-white">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jeanette Harmon</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>An overall wonderful and rewarding experience</h2>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur aliquid laboriosam reiciendis repudiandae voluptatum consequuntur! Iste repellendus placeat itaque, expedita natus quaerat molestiae maxime harum deserunt id eveniet voluptatum porro doloremque nulla veritatis alias, possimus a magnam ducimus! Magni repellat, rem animi, cum veritatis temporibus exercitationem, quo non error eius sed minima ullam rerum ratione blanditiis. A fugiat, nihil in, veniam odio iure necessitatibus aliquam quibusdam maxime adipisci omnis tempora ducimus rerum quam, ipsum sapiente fuga neque eius consequuntur impedit facere animi blanditiis. Impedit officiis dolore beatae repudiandae nisi iure, atque quasi, unde distinctio fugiat voluptatibus, quibusdam sapiente nihil animi? Aperiam, debitis quos consectetur similique perspiciatis vitae doloribus? Architecto vel, nulla unde accusamus tempore voluptatem ipsum officiis. Vel, perspiciatis?
+        </blockquote>
+      </article>
+
+      <article class="bg-blackish-blue">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Ânonimo</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>
+          Awesome teaching support from TAs who did the bootcamp themselves.
+          Getting guidance from them and learning from their experiences was
+          easy.
+        </h2>
+        <blockquote>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, officiis distinctio delectus minima quod dolores magnam et vitae modi, saepe eveniet voluptate, facilis a quis molestiae eaque est quas esse placeat. Nostrum pariatur ipsa ratione sed voluptas, iusto omnis, quae veritatis voluptatibus vel ducimus iste voluptatem dignissimos ullam, optio tempore harum nihil consectetur officia placeat commodi maxime sunt facilis quisquam. Tempora corrupti praesentium voluptate laborum perspiciatis illo maxime eius reiciendis libero esse atque, accusamus blanditiis debitis, ducimus corporis incidunt asperiores consequuntur ipsam. Exercitationem culpa mollitia, enim, tenetur voluptate libero sit, nobis excepturi quo natus quibusdam reiciendis aspernatur placeat. Iusto excepturi laborum eum? Nisi quaerat incidunt, laudantium nam vero voluptate nemo asperiores beatae eaque error? Doloribus adipisci dolorum a omnis et incidunt perferendis placeat itaque debitis dolorem quisquam maiores, possimus error explicabo fuga odio! Accusamus necessitatibus odit consectetur voluptas veniam, consequuntur aliquid, perferendis ex quia reiciendis dolore harum explicabo nesciunt sunt deserunt molestias. Minima, doloremque tenetur? Ex cum illo doloremque qui impedit neque tempore veniam necessitatibus earum assumenda! Voluptatem ex corrupti provident doloremque neque, ratione quaerat? Possimus eaque tempora inventore hic dolores ex? Mollitia itaque neque quis voluptatibus, omnis a praesentium quos distinctio adipisci perferendis minima iste velit ipsa assumenda. Nobis.
+        </blockquote>
+      </article>
+
+      <article class="bg-white last">
+        <figure>
+            <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Kira Whittle</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>Such a life-changing experience. Highly recommended!</h2>
+        <blockquote>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti autem, minus voluptate perspiciatis dolorum reiciendis neque laboriosam soluta ut, tempore molestias voluptates rem! Iure perferendis quae ea repellendus omnis molestias suscipit doloribus, nostrum vero, impedit deserunt accusantium inventore quod odit rem nobis. Neque eligendi totam deserunt dicta ex optio quam modi quisquam praesentium quos eum, dolores obcaecati, enim ipsam deleniti suscipit temporibus architecto dolore quis rerum accusantium labore! Magni, sequi quo dignissimos laborum distinctio, quod cumque ut consequatur amet dolor accusamus eveniet ab placeat adipisci reprehenderit ducimus. Eaque labore ipsa nihil cupiditate. Necessitatibus dolor error distinctio enim natus cumque, consequuntur quibusdam amet fugiat vero ratione porro at animi ipsum saepe harum dolorum reiciendis modi velit pariatur accusantium beatae? Atque eveniet officiis et eius omnis nobis explicabo quis est hic inventore officia corrupti eos fuga recusandae sequi possimus quia ut iusto vel delectus, obcaecati accusantium mollitia! Velit error quaerat magnam. Minima sed rem provident reprehenderit adipisci aspernatur accusantium suscipit dicta temporibus magnam accusamus architecto facilis deleniti nam nesciunt repellat labore optio ullam libero, doloremque voluptatum! Aspernatur, modi optio? Unde ex tempora, quos debitis quo exercitationem nesciunt ea officiis dolor harum magnam eaque accusamus. Perferendis blanditiis ratione repellat, fugit repudiandae explicabo culpa perspiciatis atque cumque. Aperiam recusandae cupiditate quia mollitia qui nisi, voluptate sit quos rerum quaerat id quibusdam, animi similique magnam vitae, nam inventore! Cum perspiciatis et ducimus quaerat sequi neque quod deleniti quisquam quam aliquam esse, quo, odio nulla unde laboriosam, numquam est facilis. Sunt ducimus similique officiis aut, odio veritatis? Iste aspernatur nisi perspiciatis. Magnam perspiciatis obcaecati dicta reiciendis quidem blanditiis ipsum quisquam, facere a, quod minima quo quis velit ad voluptas natus aut molestiae sed. Ea neque numquam obcaecati repellat blanditiis saepe libero repudiandae tenetur? Vel, perferendis commodi exercitationem asperiores maiores eaque ab deleniti tenetur porro veritatis molestias?
+      </article>
+    
+      <article class="bg-white">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jeanette Harmon</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>An overall wonderful and rewarding experience</h2>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat pariatur aliquid laboriosam reiciendis repudiandae voluptatum consequuntur! Iste repellendus placeat itaque, expedita natus quaerat molestiae maxime harum deserunt id eveniet voluptatum porro doloremque nulla veritatis alias, possimus a magnam ducimus! Magni repellat, rem animi, cum veritatis temporibus exercitationem, quo non error eius sed minima ullam rerum ratione blanditiis. A fugiat, nihil in, veniam odio iure necessitatibus aliquam quibusdam maxime adipisci omnis tempora ducimus rerum quam, ipsum sapiente fuga neque eius consequuntur impedit facere animi blanditiis. Impedit officiis dolore beatae repudiandae nisi iure, atque quasi, unde distinctio fugiat voluptatibus, quibusdam sapiente nihil animi? Aperiam, debitis quos consectetur similique perspiciatis vitae doloribus? Architecto vel, nulla unde accusamus tempore voluptatem ipsum officiis. Vel, perspiciatis?
+        </blockquote>
+      </article>
+
+      <article class="bg-grayish-blue">
+        <figure>
+          <img src="img/image-removebg-preview (2).png" alt="" />
+          <figcaption>
+            <p>Jonathan Walters</p>
+            <p>Verified Graduate</p>
+          </figcaption>
+        </figure>
+        <h2>The team was very supportive and kept me motivated</h2>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo odit enim dolore, asperiores similique illo sunt officia officiis in debitis suscipit quam fugit qui, tempore at ipsum assumenda rem iusto. Porro minus iure unde illum quidem repellendus, libero praesentium doloribus quas iste? Asperiores, sit error. Eum dignissimos ipsam possimus voluptas. Deserunt aspernatur molestiae facilis atque est omnis sunt suscipit quo, nam voluptate magnam commodi officia fugiat rerum facere, reprehenderit ducimus voluptates sit. Totam provident veritatis, autem quis pariatur repellendus eum amet itaque? Dolores assumenda explicabo necessitatibus similique nihil mollitia sed dolore quibusdam a? Laboriosam rerum voluptatibus, odio modi quo libero porro quaerat qui magni nihil sint similique ad quam neque repellendus nisi corrupti et! Natus sequi nam accusantium doloremque!
+        </blockquote>
+      </article>
+      
+
+    </main>
+  </body>
+</html>
